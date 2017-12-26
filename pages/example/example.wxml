@@ -1,0 +1,44 @@
+<view class="animaTab">
+    <view class="property {{isTab?'active':''}}" catchtap="animateProperty">属性</view>
+    <view class="incident {{isTab?'':'active'}}" catchtap="animateIncident">事件</view>
+</view>
+
+
+<view class="animition-warp">
+    <view wx:if="{{ isTab }}" class="{{animatess}}">
+        <view class="demo-text">anmition.css</view>
+    </view>
+    <view wx:else>
+        <view wx:if="{{animatStatus == 'start'}}" class="{{animatess}}" bindanimationstart="animateStart">
+            <view class="demo-text">anmition.css</view>
+        </view>
+        <view wx:elif="{{animatStatus == 'one'}}" class="{{animatess}}" bindanimationiteration="animateOne">
+            <view class="demo-text">anmition.css</view>
+        </view>
+        <view wx:elif="{{animatStatus == 'end'}}" class="{{animatess}}" catchanimationend="animateEnd">
+            <view class="demo-text">anmition.css</view>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{isTab}}" class="example-warp">
+    <view class="btn" catchtap="performCount1">执行1次</view>
+    <view class="btn" catchtap="performCount5">执行5次</view>
+    <view class="btn" catchtap="performInfinite">无限循环</view>
+    <view class="btn" catchtap="delay3s">延迟3秒</view>
+    <view class="btn" catchtap="delay5s">延迟5秒</view>
+    <view class="btn" catchtap="timingLinear">线性过渡</view>
+    <view class="btn" catchtap="timingEase">平滑过渡</view>
+    <view class="btn" catchtap="timingEaseIn">由慢到快</view>
+    <view class="btn" catchtap="timingEaseOut">由快到慢</view>
+    <view class="btn" catchtap="timingEaseInOut" >由慢到快再到慢</view>
+</view>
+<view wx:else class="example-warp">
+    <view class="btn" catchtap="animationStatus" data-status="start">动画前触发</view>
+    <view class="btn" catchtap="animationStatus" data-status="one">动画一次迭代完成触发</view>
+    <view class="btn" catchtap="animationStatus" data-status="end">动画结束触发</view>
+</view>
+
+
+
+

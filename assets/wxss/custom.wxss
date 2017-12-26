@@ -1,0 +1,52 @@
+.animated.cout1 {
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count: 1;
+}
+.animated.cout5 {
+    -webkit-animation-iteration-count:5;
+    animation-iteration-count: 5;
+}
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.animated.delay3 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.animated.delay5 {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.animated.linear {
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+.animated.ease {
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+.animated.ease-in {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.animated.ease-out {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.animated.ease-in-out {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
