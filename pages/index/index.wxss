@@ -40,6 +40,7 @@
     border-radius: 100px;
     box-shadow: 0 7px 0 #8bc220, 0 8px 3px rgba(0, 0, 0, 0.3);
     background-color: #A5DE37;
+    text-align: center;
 }
 .longtime{
     box-shadow: 0 2px 0 #8bc220, 0 2px 3px rgba(0, 0, 0, 1);

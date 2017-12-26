@@ -2,7 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/example/example"
-],
+  ],
   "window":{
     "navigationBarBackgroundColor": "#ff225e",
     "navigationBarTitleText":"小程序Animation",
