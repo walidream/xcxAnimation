@@ -5,7 +5,7 @@ const anss = 'zoomIn animated';
 Page({
   data: {
     animatess:'',
-    animatStatus:'start',
+    animatStatus:'end',
     isTab:true
   },
   animateProperty:function(){
@@ -109,11 +109,12 @@ Page({
   },
   //动画结束触发
   animateEnd:function(){
+    console.log(1);
     wx.showToast({
       title: '动画结束触发',
       icon: 'success',
       duration: 2000
-    })
+    });
   }
 });
 

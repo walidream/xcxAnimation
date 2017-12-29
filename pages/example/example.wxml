@@ -9,13 +9,13 @@
         <view class="demo-text">anmition.css</view>
     </view>
     <view wx:else>
-        <view wx:if="{{animatStatus == 'start'}}" class="{{animatess}}" bindanimationstart="animateStart">
+        <view wx:if="{{animatStatus == 'start'}}" class="{{animatess}}" bindanimationend="animateEnd" bindanimationstart="animateStart">
             <view class="demo-text">anmition.css</view>
         </view>
-        <view wx:elif="{{animatStatus == 'one'}}" class="{{animatess}}" bindanimationiteration="animateOne">
+        <view wx:elif="{{animatStatus == 'one'}}" class="{{animatess}}" bindanimationend="animateEnd" bindanimationiteration="animateOne">
             <view class="demo-text">anmition.css</view>
         </view>
-        <view wx:elif="{{animatStatus == 'end'}}" class="{{animatess}}" catchanimationend="animateEnd">
+        <view wx:elif="{{animatStatus == 'end'}}" class="{{animatess}}" bindanimationend="animateEnd">
             <view class="demo-text">anmition.css</view>
         </view>
     </view>
