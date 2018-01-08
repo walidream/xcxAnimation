@@ -4,4 +4,4 @@
 
 ## 演示demo：
 
-![动图](http://ozk28a7ln.bkt.clouddn.com/assets/image/xcxAnimation/xcx_animation_05.gif)
+![](http://ozk28a7ln.bkt.clouddn.com/assets/image/xcxAnimation/xcx_animation_05.gif)

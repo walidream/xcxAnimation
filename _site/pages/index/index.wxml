@@ -1,0 +1,20 @@
+<view class="animition-warp">
+    <view class="{{animatess}}">
+        <view class="demo-text">anmition.css</view>
+    </view>
+</view>
+
+<view class="section">
+    <view class="section-warp">
+        <picker class="chooseAnimation" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                {{array[index]}}
+            </view>
+        </picker>
+        <view class="anew " catchtap="animate">Animate it</view>
+    </view>
+</view>
+
+
+
+

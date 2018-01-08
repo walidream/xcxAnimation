@@ -1,0 +1,56 @@
+@import "../../assets/wxss/animat.wxss";
+@import "../../assets/wxss/custom.wxss";
+
+.animition-warp{
+    padding: 100px 0 0 0;
+}
+
+.demo-text{
+    font-size: 50px;
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+.section-warp{
+    margin: 70px 0 0 0;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker{
+    display: inline-block;
+    padding: 15px 15px;
+    width: 200px;
+    color: #666;
+    border: 1px solid #C0C8C9;
+    border-radius: 3px;
+    text-align: left;
+}
+.anew{
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #A5DE37;
+    border-radius: 100px;
+    box-shadow: 0 7px 0 #8bc220, 0 8px 3px rgba(0, 0, 0, 0.3);
+    background-color: #A5DE37;
+    text-align: center;
+}
+.longtime{
+    box-shadow: 0 2px 0 #8bc220, 0 2px 3px rgba(0, 0, 0, 1);
+}
+
+@-webkit-keyframes hue{
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
